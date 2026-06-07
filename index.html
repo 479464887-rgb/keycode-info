@@ -20,7 +20,16 @@ h1{font-size:20px;color:#f0f6fc;margin-bottom:8px;}
 .info .value{font-size:16px;font-weight:600;color:var(--accent);}
 .history{display:flex;gap:4px;margin-top:16px;flex-wrap:wrap;justify-content:center;}
 .history span{background:var(--bg);padding:4px 8px;border-radius:4px;font-size:12px;font-family:monospace;color:var(--text2);}
-</style></head><body>
+/* 响应式设计 */
+@media (max-width: 768px) {
+  body { padding: 12px; }
+  header { padding: 12px 16px; flex-direction: column; }
+  .container { max-width: 100%; padding: 0 8px; }
+  h1 { font-size: 1.5rem; }
+  textarea, input, select, button { width: 100%; }
+  .grid { grid-template-columns: 1fr; }
+  .card { padding: 12px; }
+}</style></head><body>
 <div class="card"><h1>⌨️ Keycode Info</h1><p class="prompt">Press any key on your keyboard</p>
 <div class="key-display" id="key">⌨️</div>
 <div class="info" id="info"><div><div class="label">key</div><div class="value">-</div></div><div><div class="label">code</div><div class="value">-</div></div><div><div class="label">keyCode</div><div class="value">-</div></div><div><div class="label">which</div><div class="value">-</div></div><div><div class="label">shift</div><div class="value">-</div></div><div><div class="label">ctrl</div><div class="value">-</div></div><div><div class="label">alt</div><div class="value">-</div></div><div><div class="label">meta</div><div class="value">-</div></div></div>
